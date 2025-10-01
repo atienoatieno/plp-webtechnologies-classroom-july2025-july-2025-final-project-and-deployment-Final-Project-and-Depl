@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SafariSpark Digital • Contact</title>
+  <meta name="description" content="Contact SafariSpark Digital Marketing">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="SafariSpark Digital Home">
+        <img src="assets/img/logo.svg" alt="" class="brand-mark" width="36" height="36">
+        <span class="brand-text">SafariSpark Digital</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact us</h1>
+        <p class="lead">Pop your message below. We’ll get back to you shortly.</p>
+      </div>
+    </section>
+    <section class="container content">
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" required aria-required="true" placeholder="Jane Doe">
+          <small class="error" id="err-name"></small>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required aria-required="true" placeholder="jane@example.com">
+          <small class="error" id="err-email"></small>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="What can we help with?"></textarea>
+          <small class="error" id="err-message"></small>
+        </div>
+        <div class="form-row">
+          <label class="checkbox">
+            <input type="checkbox" id="agree" name="agree" required aria-required="true">
+            <span>I agree to the <a href="#">terms</a>.</span>
+          </label>
+          <small class="error" id="err-agree"></small>
+        </div>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <p class="form-success" role="status" aria-live="polite" hidden>Thanks! Your message has been sent.</p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> SafariSpark Digital • Built with HTML5, CSS3 & JavaScript.</p>
+      <ul class="social">
+        <li><a href="#" aria-label="Twitter">Twitter</a></li>
+        <li><a href="#" aria-label="GitHub">GitHub</a></li>
+        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
